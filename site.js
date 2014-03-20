@@ -72,7 +72,7 @@ var json = {
             "noun" : "half-inflated basketball"
         },
         {
-            "noun" : "oven mitts"
+            "noun" : "oven mitt"
         },
         {
             "noun" : "scratched-up-metal zing"
@@ -150,11 +150,19 @@ var json = {
 }
 
 
-fillVerbs(json.verbs);
-fillNouns(json.nouns);
-fillYear(json.years);
-fillColor(json.colors);
-fillWine(json.wines);
+newPhrase();
+
+$('button').on('click', newPhrase);
+
+
+function newPhrase(){
+    fillVerbs(json.verbs);
+    fillNouns(json.nouns);
+    fillYear(json.years);
+    fillColor(json.colors);
+    fillWine(json.wines);
+}
+
 
 function getRandomVerb(items, existing){
 
@@ -205,7 +213,7 @@ function getRandomNoun(items, existing){
 }
 
 function fillNouns(nounList){
-    var newNouns = getSomeNouns(nounList, 3);
+    var newNouns = getSomeNouns(nounList, 2);
 console.log(newNouns)
     for (var i = newNouns.length - 1; i >= 0; i--) {
         var noun = newNouns[i];
