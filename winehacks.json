@@ -1,0 +1,148 @@
+{
+    "verbs" : [
+        {
+            "verb" : "decent"
+        },
+        {
+            "verb" : "rusty"
+        },
+        {
+            "verb" : "hospitable"
+        },
+        {
+            "verb" : "half-decent"
+        },
+        {
+            "verb" : "scandalous"
+        },
+        {
+            "verb" : "self-confident"
+        },
+        {
+            "verb" : "self-assured"
+        },
+        {
+            "verb" : "literally toxic"
+        },
+        {
+            "verb" : "literally deathly"
+        },
+        {
+            "verb" : "bogusly idealistic"
+        },
+        {
+            "verb" : "kind of ridiculously amazing"
+        },
+        {
+            "verb" : "delicious-yet-stuffy"
+        },
+        {
+            "verb" : "dusty"
+        },
+        {
+            "verb" : "regrettably balanced"
+        },
+        {
+            "noun" : "farm-raised"
+        },
+        {
+            "noun" : "organic"
+        },
+        {
+            "noun" : "chocolately"
+        },
+        {
+            "noun" : "cheery"
+        },
+        {
+            "noun" : "depressing"
+        },
+    ],
+    "nouns" : [
+        {
+            "noun" : "throw rug"
+        },
+        {
+            "noun" : "twice-used bath towel"
+        },
+        {
+            "noun" : "half-inflated basketball"
+        },
+        {
+            "noun" : "oven mitts"
+        },
+        {
+            "noun" : "stove-top crust"
+        },
+        {
+            "noun" : "oil-based paint"
+        },
+        {
+            "noun" : "tennis ball can"
+        },
+        {
+            "noun" : "sweat-stained t-shirt"
+        },
+        {
+            "noun" : "unwashed beard"
+        },
+        {
+            "noun" : "sand"
+        },
+    ],
+    "wines" : [
+        {
+            "wine" : "Burgundy"
+        },
+        {
+            "wine" : "Pinot Noir"
+        }
+        {
+            "wine" : "Pinot Grigio"
+        },
+        {
+            "wine" : "Zinfandel"
+        },
+        {
+            "wine" : "Blush"
+        },
+        {
+            "wine" : "Sherry"
+        },
+        {
+            "wine" : "dessert wine"
+        },
+        {
+            "wine" : "Malbec"
+        },
+    ],
+    "colors" : [
+        {
+            "color" : "white"
+        },
+        {
+            "color" : "red"
+        }
+    ],
+    "years" : [
+        {
+            "year" : "2010"
+        },
+        {
+            "year" : "2011"
+        },
+        {
+            "year" : "2012"
+        },
+        {
+            "year" : "2009"
+        },
+        {
+            "year" : "2013"
+        },
+        {
+            "year" : "2008"
+        },
+    ]
+}
+
