@@ -43,19 +43,19 @@
             "verb" : "regrettably balanced"
         },
         {
-            "noun" : "farm-raised"
+            "verb" : "farm-raised"
         },
         {
-            "noun" : "organic"
+            "verb" : "organic"
         },
         {
-            "noun" : "chocolately"
+            "verb" : "chocolately"
         },
         {
-            "noun" : "cheery"
+            "verb" : "cheery"
         },
         {
-            "noun" : "depressing"
+            "verb" : "depressing"
         },
     ],
     "nouns" : [
@@ -89,6 +89,18 @@
         {
             "noun" : "sand"
         },
+        {
+            "noun" : "rustic oak barrels"
+        },
+        {
+            "noun" : "baby diaper"
+        },
+        {
+            "noun" : "old baseball mitt"
+        },
+        {
+            "noun" : "wet dog"
+        }
     ],
     "wines" : [
         {
@@ -115,10 +127,34 @@
         {
             "wine" : "Malbec"
         },
+        {
+            "wine" : "Cote du Rhone"
+        },
+        {
+            "wine" : "Chardonnay"
+        },
+        {
+            "wine" : "Riesling"
+        },
+        {
+            "wine" : "Sauvignon Blanc"
+        },
+        {
+            "wine" : "Merlot"
+        },
+        {
+            "wine" : "Cabernet Sauvignon"
+        },
+        {
+            "wine" : "Shiraz"
+        }
     ],
     "colors" : [
         {
             "color" : "white"
+        },
+        {
+            "color" : "rose"
         },
         {
             "color" : "red"
