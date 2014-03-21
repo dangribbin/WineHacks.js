@@ -4,6 +4,18 @@ var json = {
             "adjective" : "almost decent"
         },
         {
+            "adjective" : "skillfully bullish"
+        },
+        {
+            "adjective" : "fantasy-grade"
+        },
+        {
+            "adjective" : "killer"
+        },
+        {
+            "adjective" : "immediately-vomit-inducing"
+        },
+        {
             "adjective" : "truly questionable"
         },
         {
