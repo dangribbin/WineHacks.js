@@ -166,7 +166,7 @@ function newPhrase(){
 
 function getRandomVerb(items, existing){
 
-    var item = items[Math.floor(Math.random()%items.length)];
+    var item = items[Math.floor(Math.random()*items.length)];
     if ($.inArray(item.verb, existing) !== -1){
         getRandomVerb(items, existing)
     }
@@ -203,7 +203,7 @@ function getSomeVerbs(verbs, number){
 
 function getRandomNoun(items, existing){
 
-    var item = items[Math.floor(Math.random()%items.length)];
+    var item = items[Math.floor(Math.random()*items.length)];
     if ($.inArray(item.noun, existing) !== -1){
         getRandomNoun(items, existing)
     }
@@ -236,16 +236,16 @@ function getSomeNouns(nouns, number){
 }
 
 function fillYear(years){
-    var year = years[Math.floor(Math.random()%years.length)].year;
+    var year = years[Math.floor(Math.random()*years.length)].year;
     $('.year').text(year)
 }
 
 function fillColor(colors){
-    var color = colors[Math.floor(Math.random()%colors.length)].color;
+    var color = colors[Math.floor(Math.random()*colors.length)].color;
     $('.color').text(color)
 }
 
 function fillWine(wines){
-    var wine = wines[Math.floor(Math.random()%wines.length)].wine;
+    var wine = wines[Math.floor(Math.random()*wines.length)].wine;
     $('.wine').text(wine)
 }
