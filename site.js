@@ -1,61 +1,61 @@
 var json = {
-    "verbs" : [
+    "adjectives" : [
         {
-            "verb" : "almost decent"
+            "adjective" : "almost decent"
         },
         {
-            "verb" : "truly questionable"
+            "adjective" : "truly questionable"
         },
         {
-            "verb" : "hospitable"
+            "adjective" : "hospitable"
         },
         {
-            "verb" : "half-assed"
+            "adjective" : "half-assed"
         },
         {
-            "verb" : "scandalous"
+            "adjective" : "scandalous"
         },
         {
-            "verb" : "self-confident"
+            "adjective" : "self-confident"
         },
         {
-            "verb" : "self-assured"
+            "adjective" : "self-assured"
         },
         {
-            "verb" : "literally toxic"
+            "adjective" : "literally toxic"
         },
         {
-            "verb" : "literally deathly"
+            "adjective" : "literally deathly"
         },
         {
-            "verb" : "bogusly idealistic"
+            "adjective" : "bogusly idealistic"
         },
         {
-            "verb" : "kind of ridiculously amazing"
+            "adjective" : "kind of ridiculously amazing"
         },
         {
-            "verb" : "delicious-yet-stuffy"
+            "adjective" : "delicious-yet-stuffy"
         },
         {
-            "verb" : "disheartening"
+            "adjective" : "disheartening"
         },
         {
-            "verb" : "fortunately unbalanced"
+            "adjective" : "fortunately unbalanced"
         },
         {
-            "verb" : "farm-raised"
+            "adjective" : "farm-raised"
         },
         {
-            "verb" : "organic"
+            "adjective" : "organic"
         },
         {
-            "verb" : "chocolately"
+            "adjective" : "chocolately"
         },
         {
-            "verb" : "sigh-worthy"
+            "adjective" : "sigh-worthy"
         },
         {
-            "verb" : "frankly depressing"
+            "adjective" : "frankly depressing"
         }
     ],
     "nouns" : [
@@ -92,6 +92,21 @@ var json = {
         {
             "noun" : "sand"
         },
+        {
+            "noun" : "rustic oak barrels"
+        },
+        {
+            "noun" : "baby diaper"
+        },
+        {
+            "noun" : "old baseball mitt"
+        },
+        {
+            "noun" : "wet dog"
+        },
+        {
+            "noun" : "Sea at low tide"
+        }
     ],
     "wines" : [
         {
@@ -118,10 +133,37 @@ var json = {
         {
             "wine" : "Malbec"
         },
+        {
+            "wine" : "Cotes du Rhone"
+        },
+        {
+            "wine" : "Chardonnay"
+        },
+        {
+            "wine" : "Riesling"
+        },
+        {
+            "wine" : "Sauvignon Blanc"
+        },
+        {
+            "wine" : "Merlot"
+        },
+        {
+            "wine" : "Cabernet Sauvignon"
+        },
+        {
+            "wine" : "Shiraz"
+        },
+        {
+            "wine" : "Bordeaux"
+        }
     ],
     "colors" : [
         {
             "color" : "white"
+        },
+        {
+            "color" : "rose"
         },
         {
             "color" : "red"
@@ -146,6 +188,20 @@ var json = {
         {
             "year" : "2008"
         },
+    ],
+    "buttonLabels" : [
+        {
+            "buttonLabel" : "Show me another, plz."
+        },
+        {
+            "buttonLabel" : "Make me even MORE irresistable!"
+        },
+        {
+            "buttonLabel" : "Give me more ways to impress [men/women]."
+        },
+        {
+            "buttonLabel" : "Make me more awesome than James Bond."
+        }
     ]
 }
 
@@ -156,48 +212,55 @@ $('button').on('click', newPhrase);
 
 
 function newPhrase(){
-    fillVerbs(json.verbs);
+    fillAdjectives(json.adjectives);
     fillNouns(json.nouns);
     fillYear(json.years);
     fillColor(json.colors);
     fillWine(json.wines);
+    fillButtonLabel(json.buttonLabels);
+}
+
+function fillButtonLabel(buttonLabelList){
+    var buttonLabel = buttonLabelList[Math.floor(Math.random()*buttonLabelList.length)];
+    console.log(buttonLabel)
+    $('.buttonLabel').text(buttonLabel.buttonLabel)
 }
 
 
-function getRandomVerb(items, existing){
+function getRandomAdjective(items, existing){
 
     var item = items[Math.floor(Math.random()*items.length)];
-    if ($.inArray(item.verb, existing) !== -1){
-        getRandomVerb(items, existing)
+    if ($.inArray(item.adjective, existing) !== -1){
+        getRandomAdjective(items, existing)
     }
     else{
-        return item.verb;
+        return item.adjective;
     }
 }
 
-function fillVerbs(verbList){
+function fillAdjectives(adjectiveList){
 
-    var newVerbs = getSomeVerbs(verbList, 3);
+    var newAdjectives = getSomeAdjectives(adjectiveList, 3);
 
-    for (var i = newVerbs.length - 1; i >= 0; i--) {
-        var verb = newVerbs[i];
-        console.log(verb)
-        $('.verb'+i).text(verb)
+    for (var i = newAdjectives.length - 1; i >= 0; i--) {
+        var adjective = newAdjectives[i];
+        console.log(adjective)
+        $('.adjective'+i).text(adjective)
     }
 
 }
 
-function getSomeVerbs(verbs, number){
-    var newVerbs = [];
+function getSomeAdjectives(adjectives, number){
+    var newAdjectives = [];
 
     for (var i = number - 1; i >= 0; i--) {
-        var verb = getRandomVerb(verbs, newVerbs);
-        if (verb) {
-            newVerbs.push(verb);
+        var adjective = getRandomAdjective(adjectives, newAdjectives);
+        if (adjective) {
+            newAdjectives.push(adjective);
         }
     }
 
-    return newVerbs;
+    return newAdjectives;
 }
 
 
