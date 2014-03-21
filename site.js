@@ -103,6 +103,9 @@ var json = {
         },
         {
             "noun" : "wet dog"
+        },
+        {
+            "noun" : "Sea at low tide"
         }
     ],
     "wines" : [
@@ -131,7 +134,7 @@ var json = {
             "wine" : "Malbec"
         },
         {
-            "wine" : "Cote du Rhone"
+            "wine" : "Cotes du Rhone"
         },
         {
             "wine" : "Chardonnay"
@@ -150,6 +153,9 @@ var json = {
         },
         {
             "wine" : "Shiraz"
+        },
+        {
+            "wine" : "Bordeaux"
         }
     ],
     "colors" : [
