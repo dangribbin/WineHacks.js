@@ -105,7 +105,7 @@ var json = {
             "noun" : "wet dog"
         },
         {
-            "noun" : "Sea at low tide"
+            "noun" : "Sea-at-low-tide"
         }
     ],
     "wines" : [
@@ -208,7 +208,10 @@ var json = {
 
 newPhrase();
 
-$('button').on('click', newPhrase);
+$('button').on('click', function(){
+    newPhrase();
+    ga('send', 'event', 'show another button', 'click');
+});
 
 
 function newPhrase(){
